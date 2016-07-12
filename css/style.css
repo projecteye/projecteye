@@ -1,0 +1,42 @@
+/* ------------------------------------------ */
+/* GLOBAL
+/* ------------------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  color: #f3f4f5;
+  background-color: #efefef;
+}
+body {
+  font: 400 15px/1.4 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* ------------------------------------------ */
+/* HEADER BLOCK
+/* ------------------------------------------ */
+.header {
+  width: 100%;
+  padding: 40px 15px;
+  background-color: #292c2f;
+}
+/* ------------------------------------------ */
+/* MAIN BLOCK
+/* ------------------------------------------ */
+.main {
+  width: 100%;
+  padding: 40px 15px;
+}
+/* ------------------------------------------ */
+/* FOOTER BLOCK
+/* ------------------------------------------ */
+.footer {
+  width: 100%;
+  padding: 40px 15px;
+  background-color: #292c2f;
+}

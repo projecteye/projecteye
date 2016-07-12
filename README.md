@@ -1,4 +1,4 @@
-# Проект «Око»
+# Проект «Око» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
 ## Об авторе
 
 
@@ -17,3 +17,10 @@
 К началу зимы я столкнулся с творческим кризисом и чуть не бросил работу над книгой, однако, почти полторы тысячи человек в сообществе "Ока" Вконтакте стали основным стимулом, чтобы продолжить.
 Как говорила мне жена: "Даже если у тебя пять читателей, ты должен закончить книгу. Потому что иначе ты подведешь, обманешь этих людей".
 Но их было намного больше чем пять и, надеюсь, я их не подвел.
+
+[travis-image]: https://travis-ci.org/projecteye/projecteye.svg?branch=master
+[travis-url]: https://travis-ci.org/projecteye/projecteye
+[dependency-image]: https://david-dm.org/projecteye/projecteye.svg?style=flat-square
+[dependency-url]: https://david-dm.org/projecteye/projecteye
+[dev-dependency-image]: https://david-dm.org/projecteye/projecteye/dev-status.svg?style=flat-square
+[dev-dependency-url]: https://david-dm.org/projecteye/projecteye#info=devDependencies
