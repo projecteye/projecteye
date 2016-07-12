@@ -1,12 +1,12 @@
 # Проект «Око» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
 [![projecteye][projecteye-main-img]][projecteye-main-url]
   [projecteye-main-url]: https://projecteye.github.io/projecteye/
-  [projecteye-main-img]: src/img/main.jpg (projecteye)
+  [projecteye-main-img]: img/main.jpg (projecteye)
   
 ## Об авторе
 [![projecteye author][projecteye-author-img]][projecteye-author-url]
   [projecteye-author-url]: https://geektimes.ru/users/ragequit/topics/
-  [projecteye-author-img]: src/img/about-author.png (projecteye author)
+  [projecteye-author-img]: img/about-author.png (projecteye author)
 
 ## О книге
 "Проект Око" повествует о нашем недалеком будущем, времени, когда технологии и инженерия сделала шаг вперед, а общество - шаг назад. Выход книги частями, по главам, наложил на повествование свой отпечаток: постоянные повороты сюжета, высокая концентрация действий и как можно меньше "воды". В книге нет ни положительных, ни отрицательных персонажей: у каждого своя история, которая раскрывается по мере прочтения.
