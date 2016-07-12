@@ -1,4 +1,8 @@
 # Проект «Око» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
+[![projecteye][2]][1]
+  [1]: https://projecteye.github.io/projecteye/
+  [2]: src/img/main.jpg (projecteye)
+  
 ## Об авторе
 
 
