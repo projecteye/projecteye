@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+before_script:
+  - cd src
+  - npm install -g grunt-cli
+
+
+notifications:
+  email: false
