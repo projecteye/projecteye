@@ -35,9 +35,8 @@
 		"node": "^5.0.0"
 	},
 
-	"private": false,
 	"scripts": {
-		"test": "editorconfig-tools check *",
+		"test": "grunt less && grunt postcss && editorconfig-tools check *",
 		"build": "grunt less && grunt postcss",
 		"start": "npm run build && grunt serve"
 	}
