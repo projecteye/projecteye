@@ -26,7 +26,10 @@
 
 [travis-image]: https://travis-ci.org/projecteye/projecteye.svg?branch=master
 [travis-url]: https://travis-ci.org/projecteye/projecteye
+
 [dependency-image]: https://david-dm.org/projecteye/projecteye.svg?style=flat-square
-[dependency-url]: https://david-dm.org/projecteye/projecteye
-[dev-dependency-image]: https://img.shields.io/david/dev/strongloop/express.svg?maxAge=2592000
+[dependency-url]: https://david-dm.org/rprojecteye/projecteye
+
+[dev-dependency-image]: https://david-dm.org/projecteye/projecteye/dev-status.svg?style=flat-square
 [dev-dependency-url]: https://david-dm.org/projecteye/projecteye#info=devDependencies
+
