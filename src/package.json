@@ -37,8 +37,8 @@
 
 	"private": false,
 	"scripts": {
-		"build": "grunt build",
-		"start": "npm run build \u0026\u0026 grunt serve",
-		"test": "editorconfig-tools check *"
+		"test": "editorconfig-tools check *",
+		"build": "grunt less && grunt postcss",
+		"start": "npm run build && grunt serve"
 	}
 }
