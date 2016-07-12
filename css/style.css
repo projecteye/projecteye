@@ -3,32 +3,34 @@
 /* ------------------------------------------ */
 * {
   box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100%;
+body {
   color: #f3f4f5;
   background-color: #efefef;
-}
-body {
   font: 400 15px/1.4 'Open Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 /* ------------------------------------------ */
 /* HEADER BLOCK
 /* ------------------------------------------ */
 .header {
+  display: flex;
   width: 100%;
-  padding: 40px 15px;
-  background-color: #292c2f;
+  height: 100vh;
+  background: #292c2f url(../img/header/main__bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 /* ------------------------------------------ */
 /* MAIN BLOCK
 /* ------------------------------------------ */
 .main {
+  display: flex;
   width: 100%;
   padding: 40px 15px;
 }
@@ -36,6 +38,7 @@ body {
 /* FOOTER BLOCK
 /* ------------------------------------------ */
 .footer {
+  display: flex;
   width: 100%;
   padding: 40px 15px;
   background-color: #292c2f;
