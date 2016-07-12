@@ -36,7 +36,7 @@
 	},
 
 	"scripts": {
-		"test": "grunt less && grunt postcss && editorconfig-tools check *",
+		"test": "editorconfig-tools check *",
 		"build": "grunt less && grunt postcss",
 		"start": "npm run build && grunt serve"
 	}
