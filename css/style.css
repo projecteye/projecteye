@@ -3,7 +3,6 @@
 /* ------------------------------------------ */
 * {
   box-sizing: border-box;
-  outline: 1px dashed lightgray;
 }
 html,
 body {
@@ -16,10 +15,27 @@ body {
   background-color: #efefef;
   font: 400 15px/1.4 'Open Sans', sans-serif;
 }
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
 p,
 span,
 a {
   display: block;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #292c2f;
+}
+a:hover {
+  text-decoration: underline;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 /* ------------------------------------------ */
 /* HEADER BLOCK
@@ -67,7 +83,8 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 30px 15px;
+  background-color: #ffffff;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -75,12 +92,20 @@ a {
   .main__container {
     -ms-flex-direction: row;
         flex-direction: row;
+    padding: 30px 40px;
   }
+}
+.main__book {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 0 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .main__book-description,
 .main__book-image {
   width: 100%;
-  padding: 40px 0;
 }
 @media screen and (min-width: 768px) {
   .main__book-description,
@@ -91,6 +116,13 @@ a {
 .main__book-description .main__links {
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 15px;
+}
+.main__book-description .main__download {
+  padding: 30px 0 0;
+}
+.main__book-description .main__download a {
+  padding: 7.5px 0;
 }
 .main__book-description .main__link-item {
   width: 50%;
@@ -111,19 +143,78 @@ a {
 .main__book-image {
   font-size: 0;
   line-height: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .main__book-image img {
   width: 100%;
   height: auto;
 }
-.main__posts {
+.main__book-history {
   width: 100%;
-  padding: 40px 0;
+  padding: 30px 0;
+}
+.main__book-author {
+  width: 100%;
+  padding: 30px 0;
+}
+.main__blockquote {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main__blockquote blockquote {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  padding-left: 15px;
+  border-left: 8px solid #efefef;
+}
+@media screen and (min-width: 768px) {
+  .main__blockquote blockquote {
+    width: 70%;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+.main__blockquote .main__blockquote-author {
+  width: 60%;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.main__blockquote .main__blockquote-author img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .main__blockquote .main__blockquote-author {
+    width: 30%;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__blockquote {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.main__news {
+  width: 100%;
+  padding: 30px 0;
+}
+.main__news .main__posts {
+  width: 100%;
+  margin-top: 15px;
   font-size: 0;
   line-height: 0;
 }
 @media screen and (min-width: 768px) {
-  .main__posts {
+  .main__news .main__posts {
     -moz-column-count: 2;
          column-count: 2;
     -moz-column-gap: 0;
@@ -163,14 +254,20 @@ a {
   padding-bottom: 15px;
   text-align: center;
 }
-.footer__copyright p {
-  margin: 0;
-}
 @media screen and (min-width: 768px) {
   .footer__copyright {
     padding-bottom: 0;
     text-align: left;
   }
+}
+.footer__copyright p {
+  margin: 0;
+}
+.footer__copyright a,
+.footer__copyright a:hover,
+.footer__copyright a:visited {
+  display: inline;
+  color: #ffffff;
 }
 .footer__copyright,
 .footer__social {
