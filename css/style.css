@@ -117,10 +117,12 @@ p:last-child {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
+  padding-left: 0;
   list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main__book-description .main__link-item {
-  width: 50%;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
@@ -142,10 +144,10 @@ p:last-child {
   position: absolute;
   display: none;
   width: 200px;
-  margin: 1px 0 0;
   padding: 0;
   list-style-type: none;
   transition: opacity 0.5s ease;
+  background: #ffffff;
 }
 .main__book-description .main__link-dropdown a {
   padding: 10px 15px;
