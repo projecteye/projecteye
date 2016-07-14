@@ -5,7 +5,7 @@
 	display: flex;
 
 	width: 100%;
-	padding: 40px 0;
+	padding: 0;
 }
 
 .main__container {
@@ -17,6 +17,8 @@
 	margin: 0 auto;
 	padding: 15px;
 
+	flex-wrap: wrap;
+
 	@media screen and (min-width: @media_sm) {
 		flex-direction: row;
 	}
@@ -25,6 +27,7 @@
 .main__book-description,
 .main__book-image {
 	width: 100%;
+	padding: 40px 0;
 
 	@media screen and (min-width: @media_sm) {
 		width: 50%;
@@ -61,5 +64,18 @@
 	img {
 		width: 100%;
 		height: auto;
+	}
+}
+
+.main__posts {
+	width: 100%;
+	padding: 40px 0;
+
+	font-size: 0;
+	line-height: 0;
+
+	@media screen and (min-width: @media_sm) {
+		column-count: 2;
+		column-gap: 0;
 	}
 }
