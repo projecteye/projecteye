@@ -117,12 +117,7 @@ p:last-child {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
-}
-.main__book-description .main__download {
-  padding: 30px 0 0;
-}
-.main__book-description .main__download a {
-  padding: 7.5px 0;
+  list-style-type: none;
 }
 .main__book-description .main__link-item {
   width: 50%;
@@ -132,13 +127,35 @@ p:last-child {
   color: #292c2f;
   border: 1px solid #292c2f;
 }
-.main__book-description .main__link-item:nth-child(1) {
-  margin-right: 15px;
+.main__book-description .main__link-item--dropdown {
+  position: relative;
+}
+.main__book-description .main__link-item--dropdown:hover + .main__link-dropdown {
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .main__book-description .main__link-item {
     width: auto;
   }
+}
+.main__book-description .main__link-dropdown {
+  position: absolute;
+  display: none;
+  width: 200px;
+  margin: 1px 0 0;
+  padding: 0;
+  list-style-type: none;
+  transition: opacity 0.5s ease;
+}
+.main__book-description .main__link-dropdown a {
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #292c2f;
+  border: 1px solid #292c2f;
+}
+.main__book-description .main__link-dropdown:hover {
+  display: block;
 }
 .main__book-image {
   font-size: 0;
@@ -209,16 +226,23 @@ p:last-child {
 }
 .main__news .main__posts {
   width: 100%;
-  margin-top: 15px;
   font-size: 0;
   line-height: 0;
+}
+.main__news .main__posts > div {
+  margin: 15px 0;
 }
 @media screen and (min-width: 768px) {
   .main__news .main__posts {
     -moz-column-count: 2;
          column-count: 2;
-    -moz-column-gap: 0;
-         column-gap: 0;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__news {
+    width: 99%;
   }
 }
 /* ------------------------------------------ */
@@ -248,6 +272,7 @@ p:last-child {
   .footer__container {
     -ms-flex-direction: row;
         flex-direction: row;
+    padding: 15px 40px;
   }
 }
 .footer__copyright {
@@ -299,7 +324,7 @@ p:last-child {
 @media screen and (min-width: 768px) {
   .footer__social span {
     width: auto;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 @media screen and (min-width: 768px) {
