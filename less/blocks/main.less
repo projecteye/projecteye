@@ -5,7 +5,7 @@
 	display: flex;
 
 	width: 100%;
-	padding: 40px 0;
+	padding: 0;
 }
 
 .main__container {
@@ -15,11 +15,26 @@
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 15px;
+	padding: 30px 15px;
+
+	background-color: @color__white;
+
+	flex-wrap: wrap;
 
 	@media screen and (min-width: @media_sm) {
 		flex-direction: row;
+
+		padding: 30px 40px;
 	}
+}
+
+.main__book {
+	display: flex;
+
+	width: 100%;
+	padding: 0 0 30px;
+
+	flex-wrap: wrap;
 }
 
 .main__book-description,
@@ -33,6 +48,11 @@
 .main__book-description {
 	.main__links {
 		display: flex;
+
+		margin-bottom: 15px;
+		padding-left: 0;
+
+		list-style-type: none;
 	}
 	.main__link-item {
 		width: 50%;
@@ -44,12 +64,44 @@
 		color: @color__darkgrey;
 		border: 1px solid @color__darkgrey;
 
-		&:nth-child(1) {
-			margin-right: 15px;
+		&--dropdown {
+			position: relative;
+
+			&:hover + .main__link-dropdown {
+				display: block;
+			}
 		}
 
 		@media screen and (min-width: @media_sm) {
 			width: auto;
+		}
+	}
+
+	.main__link-dropdown {
+		position: absolute;
+
+		display: none;
+
+		width: 200px;
+		margin: 1px 0 0;
+		padding: 0;
+
+		list-style-type: none;
+
+		transition: opacity 0.5s ease;
+
+		a {
+			padding: 10px 15px;
+
+			text-align: center;
+			text-decoration: none;
+
+			color: @color__darkgrey;
+			border: 1px solid @color__darkgrey;
+		}
+
+		&:hover {
+			display: block;
 		}
 	}
 }
@@ -58,8 +110,88 @@
 	font-size: 0;
 	line-height: 0;
 
+	align-self: center;
+
 	img {
 		width: 100%;
 		height: auto;
+	}
+}
+
+.main__book-history {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.main__book-author {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.main__blockquote {
+	display: flex;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	blockquote {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+		margin-left: 0;
+		padding-left: 15px;
+
+		border-left: 8px solid @color__lightgrey;
+
+		@media screen and (min-width: @media_sm) {
+			width: 70%;
+			margin-right: 40px;
+			margin-bottom: 0;
+		}
+	}
+
+	.main__blockquote-author {
+		width: 60%;
+		margin: 0 auto;
+
+		align-self: center;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		@media screen and (min-width: @media_sm) {
+			width: 30%;
+			padding: 0 30px;
+		}
+	}
+
+	@media screen and (min-width: @media_sm) {
+		flex-wrap: nowrap;
+	}
+}
+
+.main__news {
+	width: 100%;
+	padding: 30px 0;
+
+	.main__posts {
+		width: 100%;
+
+		font-size: 0;
+		line-height: 0;
+
+		& > div {
+			margin: 15px 0;
+		}
+
+		@media screen and (min-width: @media_sm) {
+			column-count: 2;
+			column-gap: 15px;
+		}
+	}
+	@media screen and (min-width: @media_sm) {
+		width: 99%;
 	}
 }
